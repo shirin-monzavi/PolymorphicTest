@@ -22,5 +22,10 @@ namespace Liskov
         {
             return base.CalculateMedicineDoze();
         }
+
+        public override Animal Create1(Cat cat)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

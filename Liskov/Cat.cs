@@ -15,7 +15,34 @@ namespace Liskov
 
         public override Cat Create(IContravariant<Cat> cat)
         {
-           return new Cat(10);    
+            return new Cat(10);
+        }
+
+        public override Cat Create1(Cat cat)
+        {
+            return new Cat(5);
+        }
+
+        public override Animal Create2(Action<Cat> setup)
+        {
+            var res = new Cat(5);
+            setup(res);
+            return res;
         }
     }
+
+    public class Small { };
+    public class Big : Small { }
+    public class Bigger : Big { }
+
+    public  class Launcher 
+    {
+        delegate Small CoverDel(Big big);
+
+
+
+    }
+
+
+
 }

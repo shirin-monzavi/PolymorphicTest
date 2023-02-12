@@ -20,6 +20,17 @@ namespace TestProject
             Assert.Equal(200, actual);
 
         }
+
+        [Fact]
+        public void Test2()
+        {
+            var testAnimal = Make(100);
+            //var actual = testAnimal.Create2(c=>testAnimal);
+            // Func<Animal> _base = () => new Cat(100).Create1(Make(100));
+            //_base.Invoke().Create1(_base.);
+            //Func<Dog, Animal> f1 = cat.Create1;
+            //Func<Cat, Animal> f2 = cat.Create1;
+        }
     }
     public class AnimalTest : AnimalTest<TestAnimal>
     {

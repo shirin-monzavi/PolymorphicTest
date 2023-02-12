@@ -17,5 +17,15 @@ namespace TestProject
         {
             throw new NotImplementedException();
         }
+
+        public override Animal Create1(Cat cat)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override Animal Create2(Action<Cat> cat)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
