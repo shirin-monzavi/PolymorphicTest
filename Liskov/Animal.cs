@@ -1,6 +1,4 @@
-﻿using System.Collections;
-
-namespace Liskov
+﻿namespace Liskov
 {
 
     public abstract class Animal

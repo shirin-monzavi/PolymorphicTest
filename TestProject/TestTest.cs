@@ -60,7 +60,7 @@ namespace TestProject
         {
             var cat = new Cat(100);
 
-            cat.Create2(cat => new a)
+            // cat.Create2(cat => new a)
 
         }
 

@@ -27,5 +27,10 @@ namespace Liskov
         {
             throw new NotImplementedException();
         }
+
+        public override Animal Create2(Action<Cat> cat)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -4,9 +4,10 @@ using Xunit;
 
 namespace TestProject
 {
-    public class AnimalTest<T> where T :  Animal
+    public abstract class AnimalTest<T> where T :  Animal
     {
-        private T sut;
+        //private T sut;
+
 
         public T Make(int w)
         {
@@ -31,9 +32,5 @@ namespace TestProject
             //Func<Dog, Animal> f1 = cat.Create1;
             //Func<Cat, Animal> f2 = cat.Create1;
         }
-    }
-    public class AnimalTest : AnimalTest<TestAnimal>
-    {
-
     }
 }
